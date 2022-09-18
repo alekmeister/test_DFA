@@ -1,0 +1,13 @@
+@import './src/style/variables';
+
+.container {
+  background-color: $main;
+  padding-right: 15px;
+  display: flex;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding-right: 0;
+  }
+}

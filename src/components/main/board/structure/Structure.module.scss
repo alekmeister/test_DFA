@@ -1,0 +1,89 @@
+@import 'src/style/variables';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.card {
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 160px;
+  height: 350px;
+  background-color: $main;
+  border-radius: 20px;
+  border: 1px solid $main;
+  &:hover {
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.card_inner {
+  padding: 10px 15px 25px;
+}
+
+.card_numbers {
+  font-size: 16px;
+  display: flex;
+  color: white;
+  font-weight: 500;
+}
+
+.element {
+  width: 50%;
+}
+.card_titles {
+  display: flex;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  margin-top: 20px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.user_Icon {
+  height: 40px;
+  border-radius: 50%;
+  width: 30%;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.user_name {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  margin-left: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.5;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.scrollBar {
+  height: 230px;
+}
+
+@media (max-width: 425px) {
+  .container {
+    justify-content: space-around;
+  }
+  .card {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}

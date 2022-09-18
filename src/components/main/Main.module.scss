@@ -1,0 +1,13 @@
+@import 'src/style/variables';
+
+.main {
+  width: 83%;
+}
+
+@media (max-width: 425px) {
+  .main {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

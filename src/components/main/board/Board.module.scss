@@ -1,0 +1,24 @@
+@import 'src/style/variables';
+.hr {
+  border: 1px solid #707d96;
+}
+
+.board {
+  min-height: 100vh;
+  background-color: $secondary;
+  border: 1px solid #000000;
+  border-bottom: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 50px 0 0;
+}
+
+.container {
+  padding: 230px 60px 300px 80px;
+  display: flex;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0;
+  }
+}

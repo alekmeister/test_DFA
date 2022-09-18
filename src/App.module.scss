@@ -1,0 +1,11 @@
+@import 'style/variables';
+
+.App {
+}
+
+.container {
+  height: 1000px;
+  background-color: $main;
+  padding-right: 15px;
+  display: flex;
+}

@@ -1,20 +1,33 @@
 {
-  "name": "test_dfa",
+  "name": "dfa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.59",
-    "@types/react": "^18.0.20",
+    "@types/node": "^16.11.58",
+    "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
+    "@types/uuid": "^8.3.4",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.9",
+    "overlayscrollbars": "^1.13.1",
+    "overlayscrollbars-react": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.8.3",
-    "web-vitals": "^2.1.4"
+    "sass": "^1.52.2",
+    "typescript": "^4.8.2",
+    "uuidv4": "^6.2.13",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,6 +41,10 @@
       "react-app/jest"
     ]
   },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 250
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,5 +56,24 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/overlayscrollbars": "^1.12.1",
+    "@types/react-router": "^5.1.18",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "8.22.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "2.6.2",
+    "src": "^1.1.2"
   }
 }
